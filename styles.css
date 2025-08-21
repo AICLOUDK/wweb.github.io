@@ -5,6 +5,7 @@ body, h1, h2, h3, p, ul, li, table, th, td, form, input, textarea, image {
     box-sizing: border-box;
 }
 
+image {
 .resize-image {
   width: 50px; /* Smaller size example */
   height: auto;
@@ -198,6 +199,7 @@ body::-webkit-scrollbar-thumb {
 .product-item:hover {
     animation: pulse 0.5s infinite;
 }
+
 
 
 
