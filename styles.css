@@ -7,7 +7,7 @@ body, h1, h2, h3, p, ul, li, table, th, td, form, input, textarea, img {
 
 /* Target images with a class for resizing */
 .resize-image {
-    width: 700px; /* Changed from 50px to a more normal size */
+    width: 450px; /* Changed from 50px to a more normal size */
     height: auto; /* Maintains aspect ratio */
 }
 
@@ -197,5 +197,6 @@ body::-webkit-scrollbar-thumb {
 .product-item:hover {
     animation: pulse 0.5s infinite;
 }
+
 
 
