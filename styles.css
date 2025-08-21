@@ -55,30 +55,22 @@ header {
 
 
 section {
-    margin: 30px 0;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 10px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 
-.product-section {
-    background-image: url('https://i.pinimg.com/736x/ed/cc/9c/edcc9cba1b65ba2fdbed46335c35c82e.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    position: relative;
-    padding: 40px 20px;
-    border-radius: 10px;
 }
 
 
 .main-image {
-    max-width: 20px;
-    border-radius: 15px; 
+    max-width: 10px;
+    border-radius: 10px; 
     box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 
@@ -146,18 +138,6 @@ footer {
 }
 
 
-.product-image {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
-}
-
-.product-image:hover {
-    transform: scale(1.05);
-}
-
-
 .rounded-input {
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -213,4 +193,5 @@ body::-webkit-scrollbar-thumb {
 .product-item:hover {
     animation: pulse 0.5s infinite;
 }
+
 
