@@ -197,6 +197,10 @@ body::-webkit-scrollbar-thumb {
 .product-item:hover {
     animation: pulse 0.5s infinite;
 }
+footer {
+  background-color: #333; /* black */
+  color: #fff; /* black */
+}
 
 
 
