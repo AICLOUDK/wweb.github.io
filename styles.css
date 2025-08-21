@@ -1,8 +1,13 @@
 styles.css
-body, h1, h2, h3, p, ul, li, table, th, td, form, input, textarea {
+body, h1, h2, h3, p, ul, li, table, th, td, form, input, textarea, image {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.resize-image {
+  width: 50px; /* Smaller size example */
+  height: auto;
 }
 
 
@@ -25,7 +30,7 @@ header {
 .company-name {
     display: inline-block;
     background-color: #4CAF50;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
     font-size: 2em;
@@ -193,5 +198,6 @@ body::-webkit-scrollbar-thumb {
 .product-item:hover {
     animation: pulse 0.5s infinite;
 }
+
 
 
