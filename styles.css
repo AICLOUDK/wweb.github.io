@@ -1,16 +1,15 @@
-styles.css
-body, h1, h2, h3, p, ul, li, table, th, td, form, input, textarea, image {
+/* Reset styles for common elements, including img instead of image */
+body, h1, h2, h3, p, ul, li, table, th, td, form, input, textarea, img {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-image {
+/* Target images with a class for resizing */
 .resize-image {
-  width: 50px; /* Smaller size example */
-  height: auto;
+    width: 50px; /* Adjust as needed */
+    height: auto; /* Maintains aspect ratio */
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -199,6 +198,7 @@ body::-webkit-scrollbar-thumb {
 .product-item:hover {
     animation: pulse 0.5s infinite;
 }
+
 
 
 
