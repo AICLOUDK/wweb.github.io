@@ -1,772 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kamyab SD - Home</title>
+  <link rel="stylesheet" href="styles.css">
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* ===== GENERAL PAGE STYLES ===== */
-    body {
-      margin: 0;
-      font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f5f7fa;
-      color: #1a1a1a;
-      line-height: 1.6;
-    }
-
-    /* ===== HEADER ===== */
-    header {
-      background: linear-gradient(90deg, #003366, #0066cc);
-      color: #fff;
-      padding: 30px 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-
-    .KSD {
-      font-size: 2.8rem;
-      font-weight: 800;
-      letter-spacing: 1px;
-      margin: 0;
-    }
-
-    /* ===== NAVIGATION BAR ===== */
-    nav ul.nav-bar {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 1.25rem;
-      font-weight: 600;
-      position: relative;
-      transition: color 0.3s ease;
-    }
-
-    .nav-link::after {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 0;
-      height: 3px;
-      background: #ffcc00;
-      transition: width 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: #ffcc00;
-    }
-
-    .nav-link:hover::after {
-      width: 100%;
-    }
-
-    /* ===== SECTION STYLES ===== */
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    }
-
-    section h2 {
-      color: #003366;
-      font-size: 2rem;
-      border-left: 6px solid #0066cc;
-      padding-left: 12px;
-      margin-bottom: 20px;
-    }
-
-    section p {
-      font-size: 1.05rem;
-      color: #333;
-      margin-bottom: 15px;
-    }
-
-    section img {
-      max-width: 300px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin: 20px 0;
-      display: block;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    }
-
-    .container h2 {
-      color: #003366;
-      font-size: 2rem;
-      border-left: 6px solid #0066cc;
-      padding-left: 12px;
-      margin-bottom: 20px;
-    }
-
-    .container p {
-      font-size: 1.05rem;
-      color: #333;
-      margin-bottom: 15px;
-    }
-
-    .container p.muted {
-      color: #555;
-      font-style: italic;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background: #003366;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 5px 0;
-      font-size: 1rem;
-    }
-
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* ===== RESPONSIVE DESIGN ===== */
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-        padding: 25px 20px;
-      }
-
-      .KSD {
-        margin-bottom: 15px;
-        font-size: 2.2rem;
-      }
-
-      .nav-link {
-        font-size: 1.1rem;
-      }
-
-      section, .container {
-        margin: 20px;
-        padding: 20px;
-      }
-    }
-  </style>
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
+  <!-- HEADER -->
   <header>
-    <h1 class="KSD">Kamyab SD</h1>
+    <h1>Kamyab SD</h1>
     <nav>
-      <ul class="nav-bar">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ===== WELCOME SECTION ===== -->
+  <!-- WELCOME SECTION -->
   <section>
-    <img src="https://raw.githubusercontent.com/AICLOUDK/wweb.github.io/refs/heads/main/IT_pic_about/IMG_9124.jpeg" alt="Kamyab SD">
+    <img src="https://raw.githubusercontent.com/AICLOUDK/wweb.github.io/refs/heads/main/IT_pic_about/IMG_9124.jpeg" alt="Kamyab SD" style="max-width: 300px;">
     
     <h2>Welcome to Kamyab SD Web!</h2>
-    <p>
-      <strong>A Dedicated Software, Network, and Cybersecurity Engineer | AI & Machine Learning Researcher | IT Strategist</strong>
-    </p>
-    <p>
-      I am a multidisciplinary engineer with a robust academic foundation and extensive hands-on experience in the design, development, and security of complex software systems and network infrastructures. My professional expertise lies at the intersection of software engineering, cybersecurity, and artificial intelligence, where I apply advanced methodologies to enhance system performance, resilience, and intelligence.
-    </p>
-    <p>
-      My research and professional work focus on the implementation of AI and machine learning models for predictive analytics, anomaly detection, and autonomous system optimization, as well as the development of secure network architectures that protect critical digital assets from evolving cyber threats.
-    </p>
-    <p>
-      With a strong grasp of both theoretical frameworks and practical applications, I have contributed to innovative projects that bridge academic research with industry solutions. I am deeply committed to continuous learning, interdisciplinary collaboration, and the pursuit of technological excellence.
-    </p>
-    <p>
-      My goal is to leverage emerging technologies to address real-world challenges, drive digital transformation, and strengthen the security and efficiency of information systems. I welcome opportunities for collaboration, research partnerships, and professional dialogue with individuals and organizations dedicated to advancing the frontiers of computing, security, and intelligent systems.
-    </p>
+    <p><strong>A Dedicated Software, Network, and Cybersecurity Engineer | AI & Machine Learning Researcher | IT Strategist</strong></p>
+    
+    <p>I am a multidisciplinary engineer with a robust academic foundation and extensive hands-on experience in the design, development, and security of complex software systems and network infrastructures. My professional expertise lies at the intersection of software engineering, cybersecurity, and artificial intelligence, where I apply advanced methodologies to enhance system performance, resilience, and intelligence.</p>
+    
+    <p>My research and professional work focus on the implementation of AI and machine learning models for predictive analytics, anomaly detection, and autonomous system optimization, as well as the development of secure network architectures that protect critical digital assets from evolving cyber threats.</p>
+    
+    <p>With a strong grasp of both theoretical frameworks and practical applications, I have contributed to innovative projects that bridge academic research with industry solutions. I am deeply committed to continuous learning, interdisciplinary collaboration, and the pursuit of technological excellence.</p>
+    
+    <p>My goal is to leverage emerging technologies to address real-world challenges, drive digital transformation, and strengthen the security and efficiency of information systems. I welcome opportunities for collaboration, research partnerships, and professional dialogue with individuals and organizations dedicated to advancing the frontiers of computing, security, and intelligent systems.</p>
   </section>
 
-  <!-- ===== REACT CERTIFICATION SLIDER ===== -->
+  <!-- REACT SLIDER -->
   <div id="root"></div>
 
-  <!-- ===== IT SUPPORT SECTION ===== -->
+  <!-- IT SUPPORT SECTION -->
   <div class="container">
     <h2>How I Provide IT Support</h2>
-    <p class="muted">
-      I deliver comprehensive and proactive IT support by efficiently diagnosing and resolving technical issues to ensure minimal downtime, enhanced system reliability, and optimal performance.
-    </p>
+    <p class="muted">I deliver comprehensive and proactive IT support by efficiently diagnosing and resolving technical issues to ensure minimal downtime, enhanced system reliability, and optimal performance.</p>
     
-    <p>
-      <strong>Technical Troubleshooting:</strong> Conduct systematic analysis of hardware, software, network, and cybersecurity issues to identify root causes and implement effective, tailored solutions that align with organizational objectives.
-    </p>
+    <p><strong>Technical Troubleshooting:</strong> Conduct systematic analysis of hardware, software, network, and cybersecurity issues to identify root causes and implement effective, tailored solutions that align with organizational objectives.</p>
     
-    <p>
-      <strong>User Support and Training:</strong> Provide end-user assistance for system access, software applications, and troubleshooting, complemented by structured training sessions to strengthen digital literacy and operational efficiency across teams.
-    </p>
+    <p><strong>User Support and Training:</strong> Provide end-user assistance for system access, software applications, and troubleshooting, complemented by structured training sessions to strengthen digital literacy and operational efficiency across teams.</p>
     
-    <p>
-      <strong>System Maintenance and Updates:</strong> Perform regular maintenance, updates, and security patching across all IT assets to ensure sustained system performance, data integrity, and compliance with security standards.
-    </p>
+    <p><strong>System Maintenance and Updates:</strong> Perform regular maintenance, updates, and security patching across all IT assets to ensure sustained system performance, data integrity, and compliance with security standards.</p>
     
-    <p>
-      <strong>Network Management:</strong> Oversee the configuration and optimization of routers, switches, and firewalls; monitor network performance; and resolve connectivity challenges to uphold a secure, stable, and efficient network infrastructure.
-    </p>
+    <p><strong>Network Management:</strong> Oversee the configuration and optimization of routers, switches, and firewalls; monitor network performance; and resolve connectivity challenges to uphold a secure, stable, and efficient network infrastructure.</p>
     
-    <p>
-      <strong>Cybersecurity Implementation:</strong> Design and deploy comprehensive security measures, including firewalls, intrusion detection systems, and vulnerability assessments, to mitigate risks and safeguard organizational data from emerging threats.
-    </p>
+    <p><strong>Cybersecurity Implementation:</strong> Design and deploy comprehensive security measures, including firewalls, intrusion detection systems, and vulnerability assessments, to mitigate risks and safeguard organizational data from emerging threats.</p>
     
-    <p>
-      <strong>Documentation and Reporting:</strong> Maintain precise documentation of support activities, system configurations, and incident reports, establishing a transparent and traceable record for continuous improvement and audit readiness.
-    </p>
+    <p><strong>Documentation and Reporting:</strong> Maintain precise documentation of support activities, system configurations, and incident reports, establishing a transparent and traceable record for continuous improvement and audit readiness.</p>
     
-    <p>
-      <strong>Proactive Monitoring:</strong> Employ advanced monitoring and diagnostic tools to identify potential disruptions before they affect operations, ensuring continuous availability, reliability, and system resilience.
-    </p>
-
-  <!-- ===== FOOTER ===== -->
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beautiful Footer Example</title>
-  <style>
-    /* General Body Styling */
-    body {
-      margin: 0;
-      font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
-      background: #f5f7fa;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* Main Content (example) */
-    .content {
-      flex: 1;
-      padding: 40px;
-      text-align: center;
-    }
-
-    /* ===== BEAUTIFUL FOOTER STYLES ===== */
-    footer {
-      background: linear-gradient(135deg, #003366 0%, #0066cc 50%, #0099ff 100%);
-      color: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-      box-shadow: 0 -4px 20px rgba(0, 51, 102, 0.3);
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Animated Background Effect */
-    footer::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-      background-size: 50px 50px;
-      animation: moveBackground 20s linear infinite;
-      z-index: 0;
-    }
-
-    @keyframes moveBackground {
-      0% {
-        transform: translate(0, 0);
-      }
-      100% {
-        transform: translate(50px, 50px);
-      }
-    }
-
-    /* Footer Content Container */
-    .footer-content {
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    /* Footer Title */
-    .footer-title {
-      font-size: 1.8rem;
-      font-weight: 800;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      background: linear-gradient(90deg, #ffcc00, #ffffff, #ffcc00);
-      background-size: 200% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: shimmer 3s linear infinite;
-    }
-
-    @keyframes shimmer {
-      0% {
-        background-position: 0% center;
-      }
-      100% {
-        background-position: 200% center;
-      }
-    }
-
-    /* Footer Paragraphs */
-    footer p {
-      margin: 12px 0;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Copyright Text */
-    .copyright {
-      font-size: 1rem;
-      opacity: 0.9;
-      margin-bottom: 10px;
-    }
-
-    /* Contact Section */
-    .contact-info {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 15px;
-    }
-
-    .contact-label {
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-
-    /* Email Link Styling */
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.2rem;
-      padding: 8px 20px;
-      border: 2px solid #ffcc00;
-      border-radius: 30px;
-      transition: all 0.3s ease;
-      display: inline-block;
-      background: rgba(255, 204, 0, 0.1);
-      position: relative;
-      overflow: hidden;
-    }
-
-    footer a::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      background: rgba(255, 204, 0, 0.3);
-      transform: translate(-50%, -50%);
-      transition: width 0.5s, height 0.5s;
-    }
-
-    footer a:hover::before {
-      width: 300px;
-      height: 300px;
-    }
-
-    footer a:hover {
-      background: #ffcc00;
-      color: #003366;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(255, 204, 0, 0.4);
-    }
-
-    /* Social Icons Section (Optional) */
-    .social-icons {
-      margin-top: 25px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .social-icon {
-      width: 50px;
-      height: 50px;
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      border: 2px solid transparent;
-    }
-
-    .social-icon:hover {
-      background: #ffcc00;
-      transform: scale(1.15) rotate(360deg);
-      border-color: #ffffff;
-    }
-
-    /* Divider Line */
-    .footer-divider {
-      width: 60%;
-      max-width: 400px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #ffcc00, transparent);
-      margin: 20px auto;
-    }
-
-    /* Badge/Tag Styling */
-    .badge {
-      display: inline-block;
-      background: rgba(255, 204, 0, 0.2);
-      color: #ffcc00;
-      padding: 5px 15px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin: 10px 5px;
-      border: 1px solid #ffcc00;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 700px) {
-      .footer-title {
-        font-size: 1.4rem;
-      }
-
-      footer p {
-        font-size: 1rem;
-      }
-
-      footer a {
-        font-size: 1rem;
-        padding: 6px 15px;
-      }
-
-      .contact-info {
-        flex-direction: column;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Example Content -->
-  <div class="content">
-    <h1>Your Website Content Goes Here</h1>
-    <p>This is an example page to showcase the beautiful footer below.</p>
+    <p><strong>Proactive Monitoring:</strong> Employ advanced monitoring and diagnostic tools to identify potential disruptions before they affect operations, ensuring continuous availability, reliability, and system resilience.</p>
+    
+    <p class="muted"><strong>Objective:</strong> My overarching goal is to deliver reliable, efficient, and secure IT support that empowers organizations to focus on their strategic priorities, while I ensure the seamless operation, protection, and advancement of their technological infrastructure.</p>
   </div>
 
-  <!-- ===== BEAUTIFUL FOOTER ===== -->
+  <!-- FOOTER -->
   <footer>
     <div class="footer-content">
       <h2 class="footer-title">Kamyab SD</h2>
-      
       <div class="footer-divider"></div>
       
-      <p class="copyright">
-        &copy; 2025 Kamyab SD 
+      <p>&copy; 2025 Kamyab SD 
         <span class="badge">AI/ML Engineer</span>
         <span class="badge">Network Security Expert</span>
       </p>
       
-      <p class="copyright">All rights reserved.</p>
+      <p>All rights reserved.</p>
       
       <div class="contact-info">
-        <span class="contact-label">📧 Contact:</span>
-        <a href="mailto:kamyabtechnical@gmail.com">
-          📨 kamyabtechnical@gmail.com
-        </a>
+        <span>📧 Contact:</span>
+        <a href="mailto:kamyabtechnical@gmail.com">📨 kamyabtechnical@gmail.com</a>
       </div>
 
-      <!-- Optional Social Icons -->
       <div class="social-icons">
-        <div class="social-icon" title="LinkedIn">💼</div>
-        <div class="social-icon" title="GitHub">💻</div>
-        <div class="social-icon" title="Twitter">🐦</div>
-        <div class="social-icon" title="Website">🌐</div>
+        <div class="social-icon">💼</div>
+        <div class="social-icon">💻</div>
+        <div class="social-icon">🐦</div>
+        <div class="social-icon">🌐</div>
       </div>
     </div>
   </footer>
 
-</body>
-</html>
-
-
-  <!-- ===== REACT APP SCRIPT ===== -->
-  <script type="text/babel">
-    const { useState, useEffect } = React;
-
-    // Lucide Icons as simple SVG components
-    const ChevronLeft = ({ size = 24 }) => (
-      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
-    );
-
-    const ChevronRight = ({ size = 24 }) => (
-      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
-    );
-
-    const Pause = ({ size = 24 }) => (
-      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="6" y="4" width="4" height="16"></rect>
-        <rect x="14" y="4" width="4" height="16"></rect>
-      </svg>
-    );
-
-    const Play = ({ size = 24 }) => (
-      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-      </svg>
-    );
-
-    const Award = ({ size = 24, className = '' }) => (
-      <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="8" r="7"></circle>
-        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-      </svg>
-    );
-
-    const highlightsData = [
-      { title: 'Comprehensive Expertise', text: 'Demonstrated proficiency in software development, network architecture, and cybersecurity engineering, ensuring the design and maintenance of resilient, high-performance digital ecosystems.' },
-      { title: 'AI & Machine Learning Innovation', text: 'Proven capability in developing and deploying advanced AI and ML models to enhance operational efficiency, automate data-driven decision-making, and support intelligent system optimization.' },
-      { title: 'Research and Academic Foundation', text: 'Strong scholarly background with research experience in emerging technologies, contributing to innovative advancements in artificial intelligence, cybersecurity, and network systems design.' },
-      { title: 'Infrastructure Development', text: 'Skilled in architecting scalable, secure, and reliable IT infrastructures that align with organizational objectives and adhere to industry standards and best practices.' },
-      { title: 'Cybersecurity and Risk Management', text: 'Adept in risk assessment, vulnerability analysis, and implementation of advanced security protocols to safeguard information assets and mitigate evolving cyber threats.' },
-      { title: 'Leadership and Collaboration', text: 'Effective communicator and experienced project leader, managing multidisciplinary teams and fostering cross-functional collaboration to achieve strategic and technical goals.' },
-      { title: 'Commitment to Innovation', text: 'Deeply committed to continuous professional growth, with a sustained focus on integrating emerging trends in AI, cybersecurity, and information technology to advance research and industry practice.' }
-    ];
-
-    const certifications = [
-      { name: 'IBM', domain: 'www.ibm.com', type: 'Certified Professional', logo: 'https://blog.logomaster.ai/hs-fs/hubfs/ibm-logo-2.jpg?width=672&height=448&name=ibm-logo-2.jpg' },
-      { name: 'Google', domain: 'google.com', type: 'Cloud Certification', logo: null },
-      { name: 'Cisco', domain: 'cisco.com', type: 'Network Certified', logo: null },
-      { name: 'Microsoft', domain: 'microsoft.com', type: 'Azure Certified', logo: null },
-      { name: 'Palo Alto Networks', domain: 'paloaltonetworks.com', type: 'Security Certified', logo: null },
-      { name: 'Red Hat', domain: 'redhat.com', type: 'Linux Certified', logo: null },
-      { name: 'Linux Foundation', domain: 'linuxfoundation.org', type: 'Open Source Certified', logo: null },
-      { name: 'Intel', domain: 'intel.com', type: 'Technology Partner', logo: null },
-      { name: 'Akamai', domain: 'akamai.com', type: 'Security Collaboration', logo: null },
-      { name: 'EC-Council', domain: 'eccouncil.org', type: 'Ethical Hacker Certified', logo: null },
-      { name: 'Fortinet', domain: 'fortinet.com', type: 'Security Certified', logo: null },
-      { name: 'Google Cloud', domain: 'cloud.google.com', type: 'Cloud Architect', logo: null },
-      { name: '(ISC)²', domain: 'www.isc2.org', type: 'Security Certified', logo: 'https://info.credly.com/hs-fs/hubfs/ISC2%20official%20lgo-01.png?width=1827&height=1778&name=ISC2%20official%20lgo-01.png' },
-      { name: 'MathWorks', domain: 'mathworks.com', type: 'MATLAB Certified', logo: null },
-      { name: 'NVIDIA', domain: 'nvidia.com', type: 'AI/ML Certified', logo: null },
-      { name: 'Oracle', domain: 'oracle.com', type: 'Database Certified', logo: null },
-      { name: 'Accenture', domain: 'accenture.com', type: 'Strategic Collaboration', logo: null }
-    ];
-
-    function App() {
-      const [currentIndex, setCurrentIndex] = useState(0);
-      const [isPaused, setIsPaused] = useState(false);
-      const [visibleSlides, setVisibleSlides] = useState(4);
-
-      useEffect(() => {
-        const updateVisibleSlides = () => {
-          if (window.innerWidth < 640) setVisibleSlides(1);
-          else if (window.innerWidth < 1024) setVisibleSlides(2);
-          else if (window.innerWidth < 1280) setVisibleSlides(3);
-          else setVisibleSlides(4);
-        };
-        
-        updateVisibleSlides();
-        window.addEventListener('resize', updateVisibleSlides);
-        return () => window.removeEventListener('resize', updateVisibleSlides);
-      }, []);
-
-      useEffect(() => {
-        if (isPaused) return;
-        const interval = setInterval(() => {
-          setCurrentIndex((prev) => (prev + 1) % certifications.length);
-        }, 3500);
-        return () => clearInterval(interval);
-      }, [isPaused]);
-
-      const handlePrev = () => setCurrentIndex((prev) => (prev - 1 + certifications.length) % certifications.length);
-      const handleNext = () => setCurrentIndex((prev) => (prev + 1) % certifications.length);
-
-      const getVisibleCertifications = () => {
-        const visible = [];
-        for (let i = 0; i < visibleSlides; i++) {
-          const index = (currentIndex + i) % certifications.length;
-          visible.push(certifications[index]);
-        }
-        return visible;
-      };
-
-      return (
-        <main className="bg-gradient-to-br from-[#f4f7fb] to-[#e8f0f8] py-12 px-4">
-          <div className="max-w-[1100px] mx-auto">
-            <section className="bg-white rounded-xl shadow-[0_8px_30px_rgba(17,24,39,0.06)] p-8">
-              <div className="text-center mb-8">
-                <h1 className="text-2xl font-bold mb-2">Professional Highlights & Collaborations</h1>
-                <p className="text-[#0a3d62] m-0">Industry Certifications & Corporate Partnerships</p>
-              </div>
-
-              <div className="grid grid-cols-1 gap-3 mb-8">
-                {highlightsData.map((highlight, index) => (
-                  <div key={index} className="p-4 rounded-lg border border-[#e6eef6] bg-gradient-to-r from-white to-[#fbfdff] hover:shadow-md transition-shadow">
-                    <span className="block mb-2 text-[#0a3d62] font-bold">{highlight.title}</span>
-                    <p className="m-0 text-[#334155]">{highlight.text}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-8 p-6 bg-gradient-to-br from-[#f8fafc] to-[#f1f5f9] rounded-xl border border-[#e6eef6]">
-                <div className="text-center mb-6">
-                  <div className="inline-flex items-center gap-2 mb-2">
-                    <Award className="text-[#0a3d62]" size={28} />
-                    <h2 className="m-0 text-xl font-bold">Professional Certifications & Corporate Collaborations</h2>
-                  </div>
-                  <p className="text-[#556] m-0">Certified partnerships with {certifications.length} leading technology corporations</p>
-                </div>
-                
-                <div className="relative bg-white rounded-lg border border-[#e6eef6] p-6 mb-6 overflow-hidden">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {getVisibleCertifications().map((cert, index) => (
-                      <div 
-                        key={`${cert.name}-${index}`}
-                        className="bg-gradient-to-br from-[#fbfdff] to-white rounded-lg p-5 border border-[#e6eef6] hover:border-[#0a3d62] hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center"
-                        style={{animation: 'fadeIn 0.5s ease-out'}}
-                      >
-                        <div className="w-full h-20 flex items-center justify-center mb-4">
-                          <img
-                            src={cert.logo || `https://logo.clearbit.com/${cert.domain}`}
-                            alt={cert.name}
-                            className="max-w-full max-h-full object-contain"
-                            onError={(e) => {
-                              e.currentTarget.style.display = 'none';
-                              e.currentTarget.nextElementSibling.style.display = 'flex';
-                            }}
-                          />
-                          <div className="hidden w-16 h-16 bg-gradient-to-br from-[#0a3d62] to-[#1e5a8e] rounded-lg items-center justify-center text-white text-2xl">
-                            {cert.name.charAt(0)}
-                          </div>
-                        </div>
-                        <div className="text-[#0b3a5b] font-semibold mb-1">{cert.name}</div>
-                        <div className="text-[0.85rem] text-[#556] mb-2">{cert.type}</div>
-                        <div className="flex items-center gap-1 text-[0.8rem] text-[#0a3d62]">
-                          <Award size={14} />
-                          <span>Certified</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="flex justify-center items-center gap-3">
-                  <button 
-                    onClick={handlePrev} 
-                    className="bg-white border border-[#d7e6f3] px-4 py-2.5 rounded-lg hover:bg-[#0a3d62] hover:text-white hover:border-[#0a3d62] transition-all flex items-center gap-2"
-                  >
-                    <ChevronLeft size={18} />
-                    Previous
-                  </button>
-                  
-                  <button 
-                    onClick={() => setIsPaused(!isPaused)} 
-                    className="bg-[#0a3d62] text-white border border-[#0a3d62] px-5 py-2.5 rounded-lg hover:bg-[#0d4a7a] transition-all flex items-center gap-2"
-                  >
-                    {isPaused ? <Play size={18} /> : <Pause size={18} />}
-                    {isPaused ? 'Resume' : 'Pause'}
-                  </button>
-                  
-                  <button 
-                    onClick={handleNext} 
-                    className="bg-white border border-[#d7e6f3] px-4 py-2.5 rounded-lg hover:bg-[#0a3d62] hover:text-white hover:border-[#0a3d62] transition-all flex items-center gap-2"
-                  >
-                    Next
-                    <ChevronRight size={18} />
-                  </button>
-                </div>
-
-                <div className="mt-6 text-center">
-                  <div className="inline-flex gap-1.5">
-                    {certifications.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setCurrentIndex(index)}
-                        className={`h-2 rounded-full transition-all ${
-                          index === currentIndex 
-                            ? 'bg-[#0a3d62] w-8' 
-                            : 'bg-[#d7e6f3] hover:bg-[#0a3d62]/50 w-2'
-                        }`}
-                        aria-label={`Go to certification ${index + 1}`}
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <style>{`
-            @keyframes fadeIn {
-              from {
-                opacity: 0;
-                transform: scale(0.95);
-              }
-              to {
-                opacity: 1;
-                transform: scale(1);
-              }
-            }
-          `}</style>
-        </main>
-      );
-    }
-
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(<App />);
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
-
-
-
-
-
