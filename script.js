@@ -175,3 +175,52 @@ function App() {
 
 // Render
 ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
+
+// ========== TECHNOLOGY SLIDER FUNCTIONS ==========
+let techSlideIndex = 0;
+let techAutoSlide;
+
+function showTechSlide(n) {
+  const slides = document.querySelectorAll('.tech-slide');
+  const dots = document.querySelectorAll('.tech-dot');
+  
+  if (!slides.length) return;
+  
+  if (n >= slides.length) { techSlideIndex = 0; }
+  if (n < 0) { techSlideIndex = slides.length - 1; }
+  
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  
+  slides[techSlideIndex].classList.add('active');
+  dots[techSlideIndex].classList.add('active');
+}
+
+function changeTechSlide(n) {
+  clearInterval(techAutoSlide);
+  techSlideIndex += n;
+  showTechSlide(techSlideIndex);
+  startTechAutoSlide();
+}
+
+function currentTechSlide(n) {
+  clearInterval(techAutoSlide);
+  techSlideIndex = n;
+  showTechSlide(techSlideIndex);
+  startTechAutoSlide();
+}
+
+function startTechAutoSlide() {
+  techAutoSlide = setInterval(() => {
+    techSlideIndex++;
+    showTechSlide(techSlideIndex);
+  }, 4000);
+}
+
+// Initialize tech slider when page loads
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.tech-slide')) {
+    showTechSlide(techSlideIndex);
+    startTechAutoSlide();
+  }
+});
