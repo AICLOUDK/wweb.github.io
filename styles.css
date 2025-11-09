@@ -209,6 +209,7 @@ footer a:hover {
   font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 .social-icon:hover {
@@ -242,4 +243,3 @@ footer a:hover {
     font-size: 1.4rem;
   }
 }
-
