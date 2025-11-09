@@ -1,225 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kamyab SD - About</title>
-  <style>
-    /* ===== GENERAL STYLES ===== */
-    body {
-      margin: 0;
-      font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f5f7fa;
-      color: #1a1a1a;
-      line-height: 1.6;
-    }
-
-    /* ===== HEADER ===== */
-    header {
-      background: linear-gradient(90deg, #003366, #0066cc);
-      color: #fff;
-      padding: 30px 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-
-    header h1.name {
-      font-size: 2.8rem;
-      font-weight: 800;
-      letter-spacing: 1px;
-      margin: 0;
-    }
-
-    nav ul.nav-bar {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 1.25rem;
-      font-weight: 600;
-      position: relative;
-      transition: color 0.3s ease;
-    }
-
-    .nav-link::after {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 0;
-      height: 3px;
-      background: #ffcc00;
-      transition: width 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: #ffcc00;
-    }
-
-    .nav-link:hover::after {
-      width: 100%;
-    }
-
-    /* ===== SECTION STYLES ===== */
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    }
-
-    section h2 {
-      color: #003366;
-      font-size: 2rem;
-      border-left: 6px solid #0066cc;
-      padding-left: 12px;
-      margin-bottom: 20px;
-    }
-
-    section h3 {
-      color: #003366;
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.05rem;
-      color: #333;
-      margin-bottom: 15px;
-    }
-
-    /* ===== IMAGE ===== */
-    .resize-image {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin: 15px 0;
-      display: block;
-    }
-
-    /* ===== TABLE ===== */
-    table.info-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 25px;
-    }
-
-    table.info-table th,
-    table.info-table td {
-      border: 1px solid #c8d9ed;
-      padding: 12px 15px;
-      text-align: left;
-    }
-
-    table.info-table th {
-      background: #003366;
-      color: #fff;
-      font-size: 1.1rem;
-    }
-
-    table.info-table td {
-      background: #f9fbff;
-      font-size: 1rem;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background: #003366;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 5px 0;
-      font-size: 1rem;
-    }
-
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* ===== RESPONSIVE DESIGN ===== */
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-        padding: 25px 20px;
-      }
-
-      header h1.name {
-        margin-bottom: 15px;
-        font-size: 2.2rem;
-      }
-
-      .nav-link {
-        font-size: 1.1rem;
-      }
-
-      section {
-        margin: 20px;
-        padding: 20px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
+  <!-- HEADER -->
   <header>
-    <h1 class="name">Kamyab SD</h1>
+    <h1>Kamyab SD</h1>
     <nav>
-      <ul class="nav-bar">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ===== ABOUT ME SECTION ===== -->
+  <!-- ABOUT ME SECTION -->
   <section>
     <h2>About Me</h2>
-    <div class="about">
-      <h3>A Software Engineer Who is Always in High-Tech</h3>
-      <p>
-        Results-driven IT Strategy and Cybersecurity Manager with over 5 years of comprehensive experience in designing, implementing, and managing cutting-edge software solutions, network infrastructures, and AI/ML applications. Proven expertise in developing robust cybersecurity frameworks, optimizing IT operations, and delivering innovative technology strategies that drive business growth.
-      </p>
-      <p>
-        Skilled in leading cross-functional teams, managing complex projects, and aligning IT initiatives with organizational goals. Adept at leveraging AI and machine learning to enhance system efficiency and security. Strong strategic thinker with a track record of successful digital transformation and risk mitigation.
-      </p>
-    </div>
-
-    <div class="SERVICE-SECTION">
-      <h3>Need Support!</h3>
-      <img src="https://github.com/AICLOUDK/wweb.github.io/blob/main/IT_pic_about/IT_Pic.png?raw=true" alt="IT Support" class="resize-image">
-      <p>
-        🚀 Need reliable IT cloud software support? We've got you covered! 💻✨ Our team specializes in seamless cloud solutions and expert ad campaigns to help your business grow. Let's take your digital game to the next level! 📈🔥
-      </p>
-    </div>
+    <h3>A Software Engineer Who is Always in High-Tech</h3>
+    
+    <p>Results-driven IT Strategy and Cybersecurity Manager with over 5 years of comprehensive experience in designing, implementing, and managing cutting-edge software solutions, network infrastructures, and AI/ML applications. Proven expertise in developing robust cybersecurity frameworks, optimizing IT operations, and delivering innovative technology strategies that drive business growth.</p>
+    
+    <p>Skilled in leading cross-functional teams, managing complex projects, and aligning IT initiatives with organizational goals. Adept at leveraging AI and machine learning to enhance system efficiency and security. Strong strategic thinker with a track record of successful digital transformation and risk mitigation.</p>
   </section>
 
-  <!-- ===== WORK EXPERIENCE SECTION ===== -->
+  <!-- NEED SUPPORT SECTION -->
+  <section>
+    <h3>Need Support!</h3>
+    <img src="https://github.com/AICLOUDK/wweb.github.io/blob/main/IT_pic_about/IT_Pic.png?raw=true" alt="IT Support">
+    
+    <p>🚀 Need reliable IT cloud software support? We've got you covered! 💻✨ Our team specializes in seamless cloud solutions and expert ad campaigns to help your business grow. Let's take your digital game to the next level! 📈🔥</p>
+  </section>
+
+  <!-- WORK EXPERIENCE SECTION -->
   <section>
     <h3>Work Experience:</h3>
-    <table class="info-table">
+    <table>
       <tr>
         <th>Company</th>
         <th>Role</th>
@@ -238,280 +59,32 @@
     </table>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beautiful Footer Example</title>
-  <style>
-    /* General Body Styling */
-    body {
-      margin: 0;
-      font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
-      background: #f5f7fa;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* Main Content (example) */
-    .content {
-      flex: 1;
-      padding: 40px;
-      text-align: center;
-    }
-
-    /* ===== BEAUTIFUL FOOTER STYLES ===== */
-    footer {
-      background: linear-gradient(135deg, #003366 0%, #0066cc 50%, #0099ff 100%);
-      color: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-      box-shadow: 0 -4px 20px rgba(0, 51, 102, 0.3);
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Animated Background Effect */
-    footer::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-      background-size: 50px 50px;
-      animation: moveBackground 20s linear infinite;
-      z-index: 0;
-    }
-
-    @keyframes moveBackground {
-      0% {
-        transform: translate(0, 0);
-      }
-      100% {
-        transform: translate(50px, 50px);
-      }
-    }
-
-    /* Footer Content Container */
-    .footer-content {
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    /* Footer Title */
-    .footer-title {
-      font-size: 1.8rem;
-      font-weight: 800;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      background: linear-gradient(90deg, #ffcc00, #ffffff, #ffcc00);
-      background-size: 200% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: shimmer 3s linear infinite;
-    }
-
-    @keyframes shimmer {
-      0% {
-        background-position: 0% center;
-      }
-      100% {
-        background-position: 200% center;
-      }
-    }
-
-    /* Footer Paragraphs */
-    footer p {
-      margin: 12px 0;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Copyright Text */
-    .copyright {
-      font-size: 1rem;
-      opacity: 0.9;
-      margin-bottom: 10px;
-    }
-
-    /* Contact Section */
-    .contact-info {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 15px;
-    }
-
-    .contact-label {
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-
-    /* Email Link Styling */
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.2rem;
-      padding: 8px 20px;
-      border: 2px solid #ffcc00;
-      border-radius: 30px;
-      transition: all 0.3s ease;
-      display: inline-block;
-      background: rgba(255, 204, 0, 0.1);
-      position: relative;
-      overflow: hidden;
-    }
-
-    footer a::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      background: rgba(255, 204, 0, 0.3);
-      transform: translate(-50%, -50%);
-      transition: width 0.5s, height 0.5s;
-    }
-
-    footer a:hover::before {
-      width: 300px;
-      height: 300px;
-    }
-
-    footer a:hover {
-      background: #ffcc00;
-      color: #003366;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(255, 204, 0, 0.4);
-    }
-
-    /* Social Icons Section (Optional) */
-    .social-icons {
-      margin-top: 25px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .social-icon {
-      width: 50px;
-      height: 50px;
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      border: 2px solid transparent;
-    }
-
-    .social-icon:hover {
-      background: #ffcc00;
-      transform: scale(1.15) rotate(360deg);
-      border-color: #ffffff;
-    }
-
-    /* Divider Line */
-    .footer-divider {
-      width: 60%;
-      max-width: 400px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #ffcc00, transparent);
-      margin: 20px auto;
-    }
-
-    /* Badge/Tag Styling */
-    .badge {
-      display: inline-block;
-      background: rgba(255, 204, 0, 0.2);
-      color: #ffcc00;
-      padding: 5px 15px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin: 10px 5px;
-      border: 1px solid #ffcc00;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 700px) {
-      .footer-title {
-        font-size: 1.4rem;
-      }
-
-      footer p {
-        font-size: 1rem;
-      }
-
-      footer a {
-        font-size: 1rem;
-        padding: 6px 15px;
-      }
-
-      .contact-info {
-        flex-direction: column;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Example Content -->
-  <div class="content">
-    <h1>Your Website Content Goes Here</h1>
-    <p>This is an example page to showcase the beautiful footer below.</p>
-  </div>
-
-  <!-- ===== BEAUTIFUL FOOTER ===== -->
+  <!-- FOOTER -->
   <footer>
     <div class="footer-content">
       <h2 class="footer-title">Kamyab SD</h2>
-      
       <div class="footer-divider"></div>
       
-      <p class="copyright">
-        &copy; 2025 Kamyab SD 
+      <p>&copy; 2025 Kamyab SD 
         <span class="badge">AI/ML Engineer</span>
         <span class="badge">Network Security Expert</span>
       </p>
       
-      <p class="copyright">All rights reserved.</p>
+      <p>All rights reserved.</p>
       
       <div class="contact-info">
-        <span class="contact-label">📧 Contact:</span>
-        <a href="mailto:kamyabtechnical@gmail.com">
-          📨 kamyabtechnical@gmail.com
-        </a>
+        <span>📧 Contact:</span>
+        <a href="mailto:kamyabtechnical@gmail.com">📨 kamyabtechnical@gmail.com</a>
       </div>
 
-      <!-- Optional Social Icons -->
       <div class="social-icons">
-        <div class="social-icon" title="LinkedIn">💼</div>
-        <div class="social-icon" title="GitHub">💻</div>
-        <div class="social-icon" title="Twitter">🐦</div>
-        <div class="social-icon" title="Website">🌐</div>
+        <div class="social-icon">💼</div>
+        <div class="social-icon">💻</div>
+        <div class="social-icon">🐦</div>
+        <div class="social-icon">🌐</div>
       </div>
     </div>
   </footer>
 
 </body>
 </html>
-
-
