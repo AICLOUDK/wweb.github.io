@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Kamyab SD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Kamyab SD</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT INTRO SECTION -->
+  <section>
+    <h2>Get In Touch</h2>
+    <p><strong>Let's Connect and Collaborate</strong></p>
+    <p>I am always open to discussing new projects, innovative ideas, research collaborations, and professional opportunities in software engineering, cybersecurity, artificial intelligence, and network infrastructure development.</p>
+    <p>Whether you're looking for technical consultation, partnership opportunities, or simply want to exchange ideas about emerging technologies, feel free to reach out through the form below or via direct contact methods.</p>
+  </section>
+
+  <!-- CONTACT FORM SECTION -->
+  <div class="container">
+    <h2>Send Me a Message</h2>
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="+1 (123) 456-7890">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject *</label>
+        <select id="subject" name="subject" required>
+          <option value="">-- Select a Subject --</option>
+          <option value="consultation">Technical Consultation</option>
+          <option value="collaboration">Research Collaboration</option>
+          <option value="job">Job Opportunity</option>
+          <option value="project">Project Partnership</option>
+          <option value="speaking">Speaking Engagement</option>
+          <option value="other">Other Inquiry</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <div id="formMessage" class="form-message"></div>
+  </div>
+
+  <!-- CONTACT INFO SECTION -->
+  <div class="container">
+    <h2>Contact Information</h2>
+    
+    <div class="contact-details">
+      <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <div class="contact-content">
+          <h3>Email</h3>
+          <p><a href="mailto:kamyabtechnical@gmail.com">kamyabtechnical@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">💼</div>
+        <div class="contact-content">
+          <h3>LinkedIn</h3>
+          <p><a href="https://linkedin.com/in/AICLOUDK" target="_blank">linkedin.com/in/AICLOUDK</a></p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">💻</div>
+        <div class="contact-content">
+          <h3>GitHub</h3>
+          <p><a href="https://github.com/AICLOUDK" target="_blank">github.com/AICLOUDK</a></p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">🐦</div>
+        <div class="contact-content">
+          <h3>Twitter</h3>
+          <p><a href="https://twitter.com/AICLOUDK" target="_blank">twitter.com/AICLOUDK</a></p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">📸</div>
+        <div class="contact-content">
+          <h3>Instagram</h3>
+          <p><a href="https://instagram.com/AICLOUDK" target="_blank">instagram.com/AICLOUDK</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AVAILABILITY SECTION -->
+  <section>
+    <h2>Professional Availability</h2>
+    <div class="availability-grid">
+      <div class="availability-card">
+        <h3>🤝 Consulting</h3>
+        <p>Available for technical consultation in cybersecurity, AI/ML implementation, and network architecture design.</p>
+      </div>
+
+      <div class="availability-card">
+        <h3>🔬 Research</h3>
+        <p>Open to collaborative research opportunities in artificial intelligence, machine learning, and cybersecurity.</p>
+      </div>
+
+      <div class="availability-card">
+        <h3>🎤 Speaking</h3>
+        <p>Available for technical talks, webinars, and conference presentations on emerging technologies.</p>
+      </div>
+
+      <div class="availability-card">
+        <h3>💼 Employment</h3>
+        <p>Considering full-time opportunities with innovative organizations working on cutting-edge technology solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <h2 class="footer-title">Kamyab SD</h2>
+      <div class="footer-divider"></div>
+      
+      <p>&copy; 2025 Kamyab SD 
+        <span class="badge">AI/ML Engineer</span>
+        <span class="badge">Network Security Expert</span>
+      </p>
+      
+      <p>All rights reserved.</p>
+      
+      <div class="contact-info">
+        <span>📧 Contact:</span>
+        <a href="mailto:kamyabtechnical@gmail.com">📨 kamyabtechnical@gmail.com</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/AICLOUDK" target="_blank" class="social-icon" title="LinkedIn">💼</a>
+        <a href="https://github.com/AICLOUDK" target="_blank" class="social-icon" title="GitHub">💻</a>
+        <a href="https://twitter.com/AICLOUDK" target="_blank" class="social-icon" title="Twitter">🐦</a>
+        <a href="https://instagram.com/AICLOUDK" target="_blank" class="social-icon" title="Instagram">📸</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Contact form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formMessage = document.getElementById('formMessage');
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      
+      // Display success message
+      formMessage.innerHTML = `
+        <div class="success-message">
+          <h3>✅ Message Sent Successfully!</h3>
+          <p>Thank you <strong>${name}</strong> for reaching out!</p>
+          <p>I have received your message about "<strong>${document.getElementById('subject').options[document.getElementById('subject').selectedIndex].text}</strong>" and will get back to you at <strong>${email}</strong> as soon as possible.</p>
+          <p>Expected response time: 24-48 hours</p>
+        </div>
+      `;
+      
+      // Reset form
+      this.reset();
+      
+      // Scroll to message
+      formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      
+      // Hide message after 8 seconds
+      setTimeout(() => {
+        formMessage.innerHTML = '';
+      }, 8000);
+    });
+  </script>
+
+</body>
+</html>
