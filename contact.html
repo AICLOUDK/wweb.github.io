@@ -34,6 +34,7 @@
     <h2>Send Me a Message</h2>
     <form id="contactForm" class="contact-form" action="https://formsubmit.co/kamyabtechnical@gmail.com" method="POST">
       <!-- FormSubmit Configuration -->
+      <input type="hidden" name="_next" value="https://your-website-url.com/thank-you.html">
       <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
@@ -180,7 +181,7 @@
 
   <script>
     // Contact form handling - FormSubmit will handle the actual email sending
-    // The form will submit to Form Submit service and redirect back
+    // The form will submit to FormSubmit service and redirect back
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       // Let the form submit naturally to FormSubmit
       // Show a loading message
