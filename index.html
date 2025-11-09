@@ -1,21 +1,86 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Kamyab SD- Home</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kamyab SD - Home</title>
+  <style>
+    /* ===== GENERAL PAGE STYLES ===== */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #1a1a1a;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003366, #0066cc);
+      color: #fff;
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    /* ===== TITLE ===== */
+    .KSD {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+    }
+
+    /* ===== NAVIGATION BAR ===== */
+    nav ul.nav-bar {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-link {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: 600;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #ffcc00;
+      transform: scale(1.1);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .KSD {
+        margin-bottom: 15px;
+        font-size: 2.2rem;
+      }
+      .nav-link {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
+  <header>
     <h1 class="KSD">Kamyab SD</h1>
     <nav>
-        <ul class="nav-bar">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-        </ul>
+      <ul class="nav-bar">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
+</body>
+</html>
 
 <section class="About">
         <img src="https://raw.githubusercontent.com/AICLOUDK/wweb.github.io/refs/heads/main/IT_pic_about/IMG_9124.jpeg" alt="pic_of_me" width="300" />
@@ -335,6 +400,7 @@ root.render(<App />);
   </footer>
 </body>
 </html>
+
 
 
 
