@@ -3,161 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kamyab SD - Services</title>
+  <title>About - Kamyab SD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* ===== GENERAL STYLES ===== */
     body {
       margin: 0;
-      font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f5f7fa;
+      font-family: "Poppins", sans-serif;
+      background: #f5f7fa;
       color: #1a1a1a;
-      line-height: 1.6;
     }
-
-    /* ===== HEADER ===== */
     header {
       background: linear-gradient(90deg, #003366, #0066cc);
-      color: #fff;
-      padding: 30px 60px;
+      color: white;
+      padding: 25px 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
-
-    header h1.name {
-      font-size: 2.8rem;
+    header h1 {
+      font-size: 2.5rem;
       font-weight: 800;
-      letter-spacing: 1px;
       margin: 0;
     }
-
-    nav ul.nav-bar {
+    nav ul {
       list-style: none;
       display: flex;
       gap: 25px;
       margin: 0;
       padding: 0;
     }
-
     .nav-link {
-      color: #ffffff;
+      color: white;
       text-decoration: none;
-      font-size: 1.25rem;
       font-weight: 600;
-      position: relative;
-      transition: color 0.3s ease;
+      font-size: 1.1rem;
     }
-
-    .nav-link::after {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 0;
-      height: 3px;
-      background: #ffcc00;
-      transition: width 0.3s ease;
-    }
-
     .nav-link:hover {
       color: #ffcc00;
     }
-
-    .nav-link:hover::after {
-      width: 100%;
-    }
-
-    /* ===== SECTION STYLES ===== */
     section {
       max-width: 1000px;
       margin: 40px auto;
-      background: #ffffff;
-      padding: 30px;
+      background: white;
+      padding: 40px;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     }
-
-    section h2 {
+    h2, h3 {
       color: #003366;
-      font-size: 2rem;
-      border-left: 6px solid #0066cc;
-      padding-left: 12px;
-      margin-bottom: 20px;
     }
-
-    section h3 {
-      color: #003366;
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.05rem;
-      color: #333;
-    }
-
-    /* ===== IMAGE ===== */
-    .resize-image {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin: 15px 0;
-    }
-
-    /* ===== TABLE ===== */
-    table.info-table {
+    table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 25px;
     }
-
-    table.info-table th, 
-    table.info-table td {
+    th, td {
       border: 1px solid #c8d9ed;
       padding: 12px 15px;
       text-align: left;
     }
-
-    table.info-table th {
+    th {
       background: #003366;
       color: #fff;
-      font-size: 1.1rem;
     }
-
-    table.info-table td {
+    td {
       background: #f9fbff;
-      font-size: 1rem;
     }
-
-    /* ===== RESPONSIVE DESIGN ===== */
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-        padding: 25px 20px;
-      }
-      header h1.name {
-        margin-bottom: 15px;
-        font-size: 2.2rem;
-      }
-      .nav-link {
-        font-size: 1.1rem;
-      }
-      section {
-        margin: 20px;
-        padding: 20px;
-      }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #003366;
+      color: #fff;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1 class="name">Kamyab SD</h1>
+    <h1>Kamyab SD</h1>
     <nav>
-      <ul class="nav-bar">
+      <ul>
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
       </ul>
@@ -166,23 +96,15 @@
 
   <section>
     <h2>About Me</h2>
-    <div class="about">
-      <h3>A Software Engineer Who is Always in High-Tech</h3>
-      <p>Results-driven IT Strategy and Cybersecurity Manager with over 5 years of comprehensive experience in designing, implementing, and managing cutting-edge software solutions, network infrastructures, and AI/ML applications. Proven expertise in developing robust cybersecurity frameworks, optimizing IT operations, and delivering innovative technology strategies that drive business growth. Skilled in leading cross-functional teams, managing complex projects, and aligning IT initiatives with organizational goals. Adept at leveraging AI and machine learning to enhance system efficiency and security. Strong strategic thinker with a track record of successful digital transformation and risk mitigation.</p>
-    </div>
+    <h3>Software Engineer | AI & Cybersecurity Expert</h3>
+    <p>
+      Results-driven IT Strategy and Cybersecurity Manager with over 5 years of comprehensive experience 
+      in designing, implementing, and managing high-tech software, cloud, and security systems. Proven expertise 
+      in leading AI/ML projects, network architecture, and digital transformation strategies that improve business resilience.
+    </p>
 
-    <div class="SERVICE-SECTION">
-      <h3>Need Support!</h3>
-      <img src="https://github.com/AICLOUDK/wweb.github.io/blob/main/IT_pic_about/IT_Pic.png?raw=true" alt="Sample" class="resize-image">
-      <p>🚀 Need reliable IT cloud software support? We've got you covered! 💻✨
-      Our team specializes in seamless cloud solutions and expert ad campaigns to help your business grow. Let’s take your digital game to the next level! 📈🔥
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <h3>Work Experience:</h3>
-    <table class="info-table">
+    <h3>Work Experience</h3>
+    <table>
       <tr>
         <th>Company</th>
         <th>Role</th>
@@ -191,43 +113,19 @@
       <tr>
         <td>RPC INC</td>
         <td>Software Engineer</td>
-        <td>Over 5 years of experience in software engineering and strategic IT management.</td>
+        <td>Over 5 years in software engineering and IT management.</td>
       </tr>
       <tr>
         <td>RLC INC</td>
         <td>Network Security Engineer</td>
-        <td>Over 5 years of experience in high technology (Software Engineering, IT-Cloud-Network Security Engineering, Cybersecurity Consulting).</td>
+        <td>Experience across IT, Cloud, Network Security, and Cybersecurity Consulting.</td>
       </tr>
     </table>
   </section>
-</body>
-</html>
 
-
-<footer>
-    <p>&copy; kamyab SD (AI/ML & Network Security Engineer) . All rights reserved.</p>
-</footer>
-</body>
-
-    
   <footer>
-    <p>Contact: <a href="mailto:kamyabtechnical@gmail.com">📨📨📨</a></p>
+    <p>&copy; 2025 Kamyab SD — AI/ML & Network Security Engineer</p>
+    <p>Contact: <a href="mailto:kamyabtechnical@gmail.com">kamyabtechnical@gmail.com</a></p>
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
