@@ -32,7 +32,13 @@
   <!-- CONTACT FORM SECTION -->
   <div class="container">
     <h2>Send Me a Message</h2>
-    <form id="contactForm" class="contact-form">
+    <form id="contactForm" class="contact-form" action="https://formsubmit.co/kamyabtechnical@gmail.com" method="POST">
+      <!-- FormSubmit Configuration -->
+      <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+      
       <div class="form-group">
         <label for="name">Full Name *</label>
         <input type="text" id="name" name="name" required placeholder="Enter your full name">
@@ -52,12 +58,12 @@
         <label for="subject">Subject *</label>
         <select id="subject" name="subject" required>
           <option value="">-- Select a Subject --</option>
-          <option value="consultation">Technical Consultation</option>
-          <option value="collaboration">Research Collaboration</option>
-          <option value="job">Job Opportunity</option>
-          <option value="project">Project Partnership</option>
-          <option value="speaking">Speaking Engagement</option>
-          <option value="other">Other Inquiry</option>
+          <option value="Technical Consultation">Technical Consultation</option>
+          <option value="Research Collaboration">Research Collaboration</option>
+          <option value="Job Opportunity">Job Opportunity</option>
+          <option value="Project Partnership">Project Partnership</option>
+          <option value="Speaking Engagement">Speaking Engagement</option>
+          <option value="Other Inquiry">Other Inquiry</option>
         </select>
       </div>
 
@@ -81,7 +87,7 @@
         <div class="contact-icon">📧</div>
         <div class="contact-content">
           <h3>Email</h3>
-          <p><a href="mailto:kamyabtechnical@gmail.com">kamyabtechnical@gmail.com</a></p>
+          <p><a href="mailto:kamyabtechnical@gmail.com">Send Email</a></p>
         </div>
       </div>
 
@@ -89,7 +95,7 @@
         <div class="contact-icon">💼</div>
         <div class="contact-content">
           <h3>LinkedIn</h3>
-          <p><a href="https://linkedin.com/in/AICLOUDK" target="_blank">linkedin.com/in/AICLOUDK</a></p>
+          <p><a href="https://linkedin.com/in/AICLOUDK" target="_blank">Visit Profile</a></p>
         </div>
       </div>
 
@@ -97,7 +103,7 @@
         <div class="contact-icon">💻</div>
         <div class="contact-content">
           <h3>GitHub</h3>
-          <p><a href="https://github.com/AICLOUDK" target="_blank">github.com/AICLOUDK</a></p>
+          <p><a href="https://github.com/AICLOUDK" target="_blank">View Projects</a></p>
         </div>
       </div>
 
@@ -105,7 +111,7 @@
         <div class="contact-icon">🐦</div>
         <div class="contact-content">
           <h3>Twitter</h3>
-          <p><a href="https://twitter.com/AICLOUDK" target="_blank">twitter.com/AICLOUDK</a></p>
+          <p><a href="https://twitter.com/AICLOUDK" target="_blank">Follow Me</a></p>
         </div>
       </div>
 
@@ -113,7 +119,7 @@
         <div class="contact-icon">📸</div>
         <div class="contact-content">
           <h3>Instagram</h3>
-          <p><a href="https://instagram.com/AICLOUDK" target="_blank">instagram.com/AICLOUDK</a></p>
+          <p><a href="https://instagram.com/AICLOUDK" target="_blank">View Photos</a></p>
         </div>
       </div>
     </div>
@@ -173,36 +179,18 @@
   </footer>
 
   <script>
-    // Contact form handling
+    // Contact form handling - FormSubmit will handle the actual email sending
+    // The form will submit to Form Submit service and redirect back
     document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
+      // Let the form submit naturally to FormSubmit
+      // Show a loading message
       const formMessage = document.getElementById('formMessage');
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const subject = document.getElementById('subject').value;
-      const message = document.getElementById('message').value;
-      
-      // Display success message
       formMessage.innerHTML = `
         <div class="success-message">
-          <h3>✅ Message Sent Successfully!</h3>
-          <p>Thank you <strong>${name}</strong> for reaching out!</p>
-          <p>I have received your message about "<strong>${document.getElementById('subject').options[document.getElementById('subject').selectedIndex].text}</strong>" and will get back to you at <strong>${email}</strong> as soon as possible.</p>
-          <p>Expected response time: 24-48 hours</p>
+          <h3>📤 Sending your message...</h3>
+          <p>Please wait while we process your request.</p>
         </div>
       `;
-      
-      // Reset form
-      this.reset();
-      
-      // Scroll to message
-      formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      
-      // Hide message after 8 seconds
-      setTimeout(() => {
-        formMessage.innerHTML = '';
-      }, 8000);
     });
   </script>
 
