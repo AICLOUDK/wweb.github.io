@@ -37,159 +37,125 @@ I welcome opportunities for collaboration, research partnerships, and profession
 <section class="Home">
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Professional Highlights — Interactive Version</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
-      line-height: 1.6;
-      background: #f9fafb;
-      color: #111;
-      padding: 40px;
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Professional Highlights — Static Version</title>
+<style>
+body {
+font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+line-height: 1.6;
+background: #f9fafb;
+color: #111;
+padding: 40px;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      padding: 30px;
-      overflow: hidden;
-    }
 
-    h2 {
-      text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
+.container {
+max-width: 900px;
+margin: 0 auto;
+background: #fff;
+border-radius: 12px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+padding: 30px;
+overflow: hidden;
+}
 
-    .highlight {
-      margin: 0.75rem 0;
-      padding: 1rem;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background: #fdfdfd;
-      cursor: pointer;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: all 0.5s ease;
-      position: relative;
-    }
 
-    .highlight.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+h2 {
+text-align: center;
+font-size: 1.8rem;
+margin-bottom: 1rem;
+}
 
-    .label {
-      font-weight: 700;
-      color: #0a3d62;
-    }
 
-    .text {
-      display: none;
-      margin-top: 8px;
-    }
+.highlight {
+margin: 0.75rem 0;
+padding: 1rem;
+border: 1px solid #ddd;
+border-radius: 8px;
+background: #fdfdfd;
+opacity: 0;
+transform: translateY(10px);
+transition: all 0.5s ease;
+}
 
-    .highlight.active .text {
-      display: block;
-    }
 
-    .copy-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: #0078d4;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      padding: 5px 8px;
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
+.highlight.visible {
+opacity: 1;
+transform: translateY(0);
+}
 
-    .copy-btn:hover {
-      background: #005ea3;
-    }
-  </style>
+
+.label {
+font-weight: 700;
+color: #0a3d62;
+}
+
+
+.text {
+margin-top: 8px;
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <h2>Professional Highlights</h2>
-    <div id="highlights"></div>
-  </div>
+<div class="container">
+<h2>Professional Highlights</h2>
+<div id="highlights"></div>
+</div>
 
-  <script>
-    const highlightsData = [
-      {
-        title: "Comprehensive Expertise",
-        text: "Demonstrated proficiency in software development, network architecture, and cybersecurity engineering, ensuring the design and maintenance of resilient, high-performance digital ecosystems."
-      },
-      {
-        title: "AI & Machine Learning Innovation",
-        text: "Proven capability in developing and deploying advanced AI and ML models to enhance operational efficiency, automate data-driven decision-making, and support intelligent system optimization."
-      },
-      {
-        title: "Research and Academic Foundation",
-        text: "Strong scholarly background with research experience in emerging technologies, contributing to innovative advancements in artificial intelligence, cybersecurity, and network systems design."
-      },
-      {
-        title: "Infrastructure Development",
-        text: "Skilled in architecting scalable, secure, and reliable IT infrastructures that align with organizational objectives and adhere to industry standards and best practices."
-      },
-      {
-        title: "Cybersecurity and Risk Management",
-        text: "Adept in risk assessment, vulnerability analysis, and implementation of advanced security protocols to safeguard information assets and mitigate evolving cyber threats."
-      },
-      {
-        title: "Leadership and Collaboration",
-        text: "Effective communicator and experienced project leader, managing multidisciplinary teams and fostering cross-functional collaboration to achieve strategic and technical goals."
-      },
-      {
-        title: "Commitment to Innovation",
-        text: "Deeply committed to continuous professional growth, with a sustained focus on integrating emerging trends in AI, cybersecurity, and information technology to advance research and industry practice."
-      }
-    ];
 
-    const container = document.getElementById('highlights');
+<script>
+const highlightsData = [
+{
+title: "Comprehensive Expertise",
+text: "Demonstrated proficiency in software development, network architecture, and cybersecurity engineering, ensuring the design and maintenance of resilient, high-performance digital ecosystems."
+},
+{
+title: "AI & Machine Learning Innovation",
+text: "Proven capability in developing and deploying advanced AI and ML models to enhance operational efficiency, automate data-driven decision-making, and support intelligent system optimization."
+},
+{
+title: "Research and Academic Foundation",
+text: "Strong scholarly background with research experience in emerging technologies, contributing to innovative advancements in artificial intelligence, cybersecurity, and network systems design."
+},
+{
+title: "Infrastructure Development",
+text: "Skilled in architecting scalable, secure, and reliable IT infrastructures that align with organizational objectives and adhere to industry standards and best practices."
+},
+{
+title: "Cybersecurity and Risk Management",
+text: "Adept in risk assessment, vulnerability analysis, and implementation of advanced security protocols to safeguard information assets and mitigate evolving cyber threats."
+},
+{
+title: "Leadership and Collaboration",
+text: "Effective communicator and experienced project leader, managing multidisciplinary teams and fostering cross-functional collaboration to achieve strategic and technical goals."
+},
+{
+title: "Commitment to Innovation",
+text: "Deeply committed to continuous professional growth, with a sustained focus on integrating emerging trends in AI, cybersecurity, and information technology to advance research and industry practice."
+}
+];
 
-    highlightsData.forEach((item, index) => {
-      const div = document.createElement('div');
-      div.classList.add('highlight');
-      div.innerHTML = `
-        <button class="copy-btn">Copy</button>
-        <span class="label">➤ ${item.title}:</span>
-        <div class="text">${item.text}</div>
-      `;
-      container.appendChild(div);
 
-      // Fade-in animation
-      setTimeout(() => div.classList.add('visible'), 150 * index);
+const container = document.getElementById('highlights');
 
-      // Toggle show/hide text
-      div.addEventListener('click', (e) => {
-        if (!e.target.classList.contains('copy-btn')) {
-          div.classList.toggle('active');
-        }
-      });
 
-      // Copy functionality
-      const copyBtn = div.querySelector('.copy-btn');
-      copyBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        navigator.clipboard.writeText(`${item.title}: ${item.text}`).then(() => {
-          copyBtn.textContent = "Copied!";
-          setTimeout(() => (copyBtn.textContent = "Copy"), 1200);
-        });
-      });
-    });
-  </script>
+highlightsData.forEach((item, index) => {
+const div = document.createElement('div');
+div.classList.add('highlight');
+div.innerHTML = `
+<span class="label">➤ ${item.title}:</span>
+<div class="text">${item.text}</div>
+`;
+container.appendChild(div);
+
+
+// Fade-in animation
+setTimeout(() => div.classList.add('visible'), 150 * index);
+});
+</script>
 </body>
 </html>
-</section>
     
 <section class="Home">
 <html lang="en">
@@ -249,6 +215,7 @@ p{margin:0.5rem 0;padding:0}
   </footer>
 </body>
 </html>
+
 
 
 
