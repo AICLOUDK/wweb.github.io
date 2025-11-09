@@ -256,10 +256,281 @@
     </p>
 
   <!-- ===== FOOTER ===== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Footer Example</title>
+  <style>
+    /* General Body Styling */
+    body {
+      margin: 0;
+      font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+      background: #f5f7fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Main Content (example) */
+    .content {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* ===== BEAUTIFUL FOOTER STYLES ===== */
+    footer {
+      background: linear-gradient(135deg, #003366 0%, #0066cc 50%, #0099ff 100%);
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 -4px 20px rgba(0, 51, 102, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Animated Background Effect */
+    footer::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: moveBackground 20s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes moveBackground {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(50px, 50px);
+      }
+    }
+
+    /* Footer Content Container */
+    .footer-content {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Footer Title */
+    .footer-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #ffcc00, #ffffff, #ffcc00);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 3s linear infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 0% center;
+      }
+      100% {
+        background-position: 200% center;
+      }
+    }
+
+    /* Footer Paragraphs */
+    footer p {
+      margin: 12px 0;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Copyright Text */
+    .copyright {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 10px;
+    }
+
+    /* Contact Section */
+    .contact-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .contact-label {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    /* Email Link Styling */
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 8px 20px;
+      border: 2px solid #ffcc00;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      background: rgba(255, 204, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    footer a::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 204, 0, 0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.5s, height 0.5s;
+    }
+
+    footer a:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+
+    footer a:hover {
+      background: #ffcc00;
+      color: #003366;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 204, 0, 0.4);
+    }
+
+    /* Social Icons Section (Optional) */
+    .social-icons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .social-icon:hover {
+      background: #ffcc00;
+      transform: scale(1.15) rotate(360deg);
+      border-color: #ffffff;
+    }
+
+    /* Divider Line */
+    .footer-divider {
+      width: 60%;
+      max-width: 400px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #ffcc00, transparent);
+      margin: 20px auto;
+    }
+
+    /* Badge/Tag Styling */
+    .badge {
+      display: inline-block;
+      background: rgba(255, 204, 0, 0.2);
+      color: #ffcc00;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin: 10px 5px;
+      border: 1px solid #ffcc00;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 700px) {
+      .footer-title {
+        font-size: 1.4rem;
+      }
+
+      footer p {
+        font-size: 1rem;
+      }
+
+      footer a {
+        font-size: 1rem;
+        padding: 6px 15px;
+      }
+
+      .contact-info {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Example Content -->
+  <div class="content">
+    <h1>Your Website Content Goes Here</h1>
+    <p>This is an example page to showcase the beautiful footer below.</p>
+  </div>
+
+  <!-- ===== BEAUTIFUL FOOTER ===== -->
   <footer>
-    <p>&copy; 2025 Kamyab SD (AI/ML & Network Security Engineer). All rights reserved.</p>
-    <p>Contact: <a href="mailto:kamyabtechnical@gmail.com">📨 kamyabtechnical@gmail.com</a></p>
+    <div class="footer-content">
+      <h2 class="footer-title">Kamyab SD</h2>
+      
+      <div class="footer-divider"></div>
+      
+      <p class="copyright">
+        &copy; 2025 Kamyab SD 
+        <span class="badge">AI/ML Engineer</span>
+        <span class="badge">Network Security Expert</span>
+      </p>
+      
+      <p class="copyright">All rights reserved.</p>
+      
+      <div class="contact-info">
+        <span class="contact-label">📧 Contact:</span>
+        <a href="mailto:kamyabtechnical@gmail.com">
+          📨 kamyabtechnical@gmail.com
+        </a>
+      </div>
+
+      <!-- Optional Social Icons -->
+      <div class="social-icons">
+        <div class="social-icon" title="LinkedIn">💼</div>
+        <div class="social-icon" title="GitHub">💻</div>
+        <div class="social-icon" title="Twitter">🐦</div>
+        <div class="social-icon" title="Website">🌐</div>
+      </div>
+    </div>
   </footer>
+
+</body>
+</html>
+
 
   <!-- ===== REACT APP SCRIPT ===== -->
   <script type="text/babel">
@@ -494,6 +765,7 @@
 
 </body>
 </html>
+
 
 
 
