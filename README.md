@@ -10,9 +10,9 @@ Detailed breakdown of all 3 pages
 Features on each page
 
 3. Key Features
-Technology slider (8 images)
-Certification slider (17 companies)
-7 professional highlights
+Technology slider 
+Certification slider 
+professional highlights
 Working hours display
 
 4. Technologies Used
