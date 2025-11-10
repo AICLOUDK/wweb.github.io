@@ -19,9 +19,6 @@ Working hours display
 HTML5, CSS3, JavaScript
 Responsive design details
 
-5. File Structure
-Clear organization chart
-
-6. Contact & Social Links
+5. Contact & Social Links
 Email and all social media
 Working hours
